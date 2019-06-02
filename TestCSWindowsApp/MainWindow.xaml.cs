@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace TestCSWindowsApp
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void RecipeText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // This function is intentionally left blank
+        }
+
+        private void RecipeTitle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // This function is intentionally left blank
+        }
+
+        private void Click_AddRecipe(object sender, RoutedEventArgs e)
+        {
+            AddRecipe addRecipe = new AddRecipe();
+            addRecipe.ShowDialog();
+        }
+
+        private void Click_GenerateRecipe(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Click_Options(object sender, RoutedEventArgs e)
+        {
+            Options options = new Options();
+            options.ShowDialog();
+        }
+    }
+}
